@@ -53,9 +53,9 @@ def create_season_df(df):
 
 with st.sidebar:
     # Menambahkan logo perusahaan
-    st.image("bike_sharing.jpg")
+    st.image("dashboard/bike_sharing.jpg")
     st.title("Muhammad Azriel Aprijal")
-data = pd.read_csv('hour.csv')
+data = pd.read_csv('dashboard/hour.csv')
 df = cleaning_data(data)
 daily_bikers_df = create_daily_bikers(df)
 weather_sit_df = create_weather_sit(df)
